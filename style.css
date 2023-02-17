@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f7f7f7;
-  color: rgb(164, 163, 163);
+  color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
 }
@@ -46,11 +46,11 @@ nav ul li {
 
 nav ul li:hover {
   background-color: #f7f7f7;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgb(169, 64, 64);
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
@@ -58,7 +58,12 @@ nav a {
   position: relative; /* needed for the pseudo-element */
 }
 
+nav a:hover {
+  color: rgb(0, 0, 0);
+}
+
 nav a::before {
+  color: black;
   content: "";
   position: absolute;
   bottom: 0;
@@ -68,20 +73,15 @@ nav a::before {
   background-color: rgb(255, 255, 255);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 1s ease-out; /* animation duration and easing */
+  transition: transform 0.3s ease-out; /* animation duration and easing */
 }
-/* 
-/* nav a:hover::before {
-  transform: scaleX(0);
-} */
-nav a:hover {
-  background-color: rgb(167, 216, 242);
-}
-*/ main {
+
+main {
   padding: 30px;
 }
 
 section {
+  text-align: center;
   background-color: #fff;
   padding: 30px;
   margin-bottom: 30px;
