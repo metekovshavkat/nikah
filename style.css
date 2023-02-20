@@ -8,10 +8,33 @@ body {
 
 header {
   background-color: rgb(224, 221, 221);
+  background-image: url("./images/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  display: none;
+  padding-left: 200px;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/* header {
+  background-color: rgb(224, 221, 221);
   color: rgb(48, 47, 47);
   padding: 30px;
   text-align: center;
-}
+} */
 
 header h1 {
   margin: 0;
